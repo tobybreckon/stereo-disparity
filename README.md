@@ -24,7 +24,7 @@ python3 ./<insert file name of one of the examples>.py
 
 Internal data sets that these tools are known to work with:
 
--- To The Bailey & Back (TTBB), Durham, 02-10-17 subsampling at 10 (TTBB-durham-02-10-17-sub10)
+- To The Bailey & Back (TTBB), Durham, 02-10-17 subsampling at 10 (TTBB-durham-02-10-17-sub10)
 
 ---
 
