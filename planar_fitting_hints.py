@@ -1,6 +1,7 @@
 #####################################################################
 
 # equation of a plane in python hints (incomplete)
+# aimed at 2017/18 L3 SSA students at DU
 
 import numpy as np
 import sys
