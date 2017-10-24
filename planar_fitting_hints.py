@@ -10,7 +10,7 @@ import math
 #####################################################################
 
 if __name__ == "__main__":
-    print("This file doesn't execute fully - see example code afer this message")
+    print("This file doesn't execute fully - see example code after this message")
     exit();
 #####################################################################
 
