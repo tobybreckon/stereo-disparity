@@ -1,6 +1,6 @@
 # Stereo Vision Disparity Tools
 
-a small selection of tools for calculating and working with output from the CR MultiSense S21 stereo camera
+a small selection of tools for calculating disparity and working with the rectified output from the CR MultiSense S21 stereo camera
 
 OpenCV Python computer vision examples used for teaching and research within the undergraduate Computer Science programme
 at [Durham University](http://www.durham.ac.uk) (UK) by [Prof. Toby Breckon](http://community.dur.ac.uk/toby.breckon/).
