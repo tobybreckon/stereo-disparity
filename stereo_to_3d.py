@@ -197,7 +197,7 @@ if (os.path.isfile(full_path_filename_left) and os.path.isfile(full_path_filenam
     cv2.waitKey(0);
 
 else:
-        print("-- files skipped (perhaps one is missing");
+        print("-- files skipped (perhaps one is missing or path is wrong)");
         print();
 
 # close all windows
