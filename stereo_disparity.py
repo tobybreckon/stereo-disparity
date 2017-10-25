@@ -30,6 +30,7 @@ directory_to_cycle_right = "right-images";   # edit this if needed
 skip_forward_file_pattern = ""; # set to timestamp to skip forward to
 
 crop_disparity = False; # display full or cropped disparity image
+pause_playback = False; # pause until key press after each image
 
 #####################################################################
 
@@ -141,16 +142,22 @@ for filename_left in left_file_list:
         cv2.imshow("disparity", (disparity_scaled * (256. / max_disparity)).astype(np.uint8));
 
         # keyboard input for exit (as standard), save disparity and cropping
+        # exit - x
+        # save - s
+        # crop - c
+        # pause - space
 
-        key = cv2.waitKey(40) & 0xFF; # wait 40ms (i.e. 1000ms / 25 fps = 40 ms)
-        if (key == ord('x')):
+        key = cv2.waitKey(40 * (not(pause_playback))) & 0xFF; # wait 40ms (i.e. 1000ms / 25 fps = 40 ms)
+        if (key == ord('x')):       # exit
             break; # exit
-        elif (key == ord('s')):
+        elif (key == ord('s')):     # save
             cv2.imwrite("sgbm-disparty.png", disparity_scaled);
             cv2.imwrite("left.png", imgL);
             cv2.imwrite("right.png", imgR);
-        elif (key == ord('c')):
+        elif (key == ord('c')):     # crop
             crop_disparity = not(crop_disparity);
+        elif (key == ord(' ')):     # pause (on next frame)
+            pause_playback = not(pause_playback);
     else:
             print("-- files skipped (perhaps one is missing or not PNG)");
             print();
