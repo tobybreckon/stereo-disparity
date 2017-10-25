@@ -9,6 +9,15 @@ All tested with [OpenCV](http://www.opencv.org) 3.x and Python 3.x.
 
 ---
 
+### Tools
+
+- stereo_disparity.py – cycles through the dataset and calculates the disparity from the left and right stereo images provided.
+- stereo_to_3d.py – projects a single example stereo pair to a 3D, write a point cloud of this data to an ASCII X Y Z file for reference (which can be viewed via
+this [online tool](http://www.opencv.org) or another 3D point cloud viewer (e.g. [http://www.pointcloudviz.com/](http://www.pointcloudviz.com/))) and shows an example back-projection from 3D to the 2D image.
+- planar_fitting_hints.py – a set of hints (aimed at Durham L3 2017/18 students) on how to efficiently use some of the advanced library features of Python to compute the coefficients of a plane from a given set of 3D points.
+
+---
+
 ### How to download and run:
 
 Download each file as needed or to download the entire repository and run each try:
