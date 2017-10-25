@@ -1,6 +1,6 @@
 #####################################################################
 
-# Example : project SGBM disparity to 3D points for am exammple pair
+# Example : project SGBM disparity to 3D points for am example pair
 # of rectified stereo images from a  directory structure
 # of left-images / right-images with filesname DATE_TIME_STAMP_{L|R}.png
 
@@ -91,7 +91,7 @@ def project_3D_points_to_2D_image_points(points):
 
     Zmax = (camera_focal_length_px * stereo_camera_baseline_m) / 2;
 
-    for i1 in xrange(len(points)):
+    for i1 in range(len(points)):
 
         # reverse earlier projection for X and Y to get x and y again
 
