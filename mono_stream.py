@@ -4,6 +4,8 @@
 # for a set of rectified stereo images from a  directory structure
 # of left-images / right-images with filesname DATE_TIME_STAMP_{L|R}.png
 
+# optionally load available IMU/GPS ground truth data
+
 # basic illustrative python script for use with provided dataset
 
 # Author : Toby Breckon, toby.breckon@durham.ac.uk
