@@ -30,7 +30,7 @@ directory_to_cycle_right = "right-images"   # edit this if needed
 
 camera_focal_length_px = 399.9745178222656  # focal length in pixels
 camera_focal_length_m = 4.8 / 1000          # focal length in metres (4.8 mm)
-stereo_camera_baseline_m = 0.2090607502     # camera baseline in pixels
+stereo_camera_baseline_m = 0.2090607502     # camera baseline in metres
 
 image_centre_h = 262.0;
 image_centre_w = 474.5;
