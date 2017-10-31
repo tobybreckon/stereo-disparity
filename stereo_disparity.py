@@ -126,8 +126,6 @@ for filename_left in left_file_list:
         _, disparity = cv2.threshold(disparity,0, max_disparity * 16, cv2.THRESH_TOZERO);
         disparity_scaled = (disparity / 16.).astype(np.uint8);
 
-        # disparity_scaled = (disparity / 16.).astype(np.uint8) + abs(disparity.min())
-
         # crop disparity to chop out left part where there are with no disparity
         # as this area is not seen by both cameras and also
         # chop out the bottom area (where we see the front of car bonnet)
