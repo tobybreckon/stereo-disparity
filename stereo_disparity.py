@@ -8,7 +8,7 @@
 
 # Author : Toby Breckon, toby.breckon@durham.ac.uk
 
-# Copyright (c) 2017 Deparment of Computer Science,
+# Copyright (c) 2017 Department of Computer Science,
 #                    Durham University, UK
 # License : LGPL - http://www.gnu.org/licenses/lgpl.html
 
