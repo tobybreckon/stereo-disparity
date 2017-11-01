@@ -26,7 +26,7 @@ import gyro     # local file gyro.py
 
 # where is the data ? - set this to where you have it
 
-master_path_to_dataset = "/tmp/TTBB-durham-02-10-17-sub10"; # ** need to edit this **
+master_path_to_dataset = "/tmp/TTBB-durham-02-10-17-sub5"; # ** need to edit this **
 directory_to_cycle = "left-images";     # edit this for left or right image set
 
 #####################################################################
