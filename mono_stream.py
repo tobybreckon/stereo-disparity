@@ -1,6 +1,6 @@
 #####################################################################
 
-# Example : load and display the ** left or right only ** image from a
+# Example : load, display and cycle the ** left or right only ** image from a
 # for a set of rectified stereo images from a  directory structure
 # of left-images / right-images with filesname DATE_TIME_STAMP_{L|R}.png
 
