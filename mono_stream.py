@@ -20,6 +20,7 @@ import cv2
 import os
 import numpy as np
 import csv
+import gyro     # local file gyro.py
 
 #####################################################################
 
@@ -130,11 +131,14 @@ for index, filename in enumerate(sorted(os.listdir(full_path_directory))):
 
         if (len(imu_data) > index):
 
-            text = "IMU: gyro. (%2f, %2f, %2f, %f)\n "\
-                %(float(imu_data[index]['orientation_x']),
-                float(imu_data[index]['orientation_y']),
-                float(imu_data[index]['orientation_z']),
-                float(imu_data[index]['orientation_w']));
+            roll, pitch, heading = gyro.gyro_to_angles(
+                        float(imu_data[index]['orientation_x']),
+                        float(imu_data[index]['orientation_y']),
+                        float(imu_data[index]['orientation_z']),
+                        float(imu_data[index]['orientation_w']));
+
+            text = "IMU: roll/pitch/heading. (%2f, %2f, %2f) "\
+                %(roll, pitch, heading);
             cv2.putText(img, text, (20,60), cv2.FONT_HERSHEY_PLAIN, 1, (0,0,255), 1, 12)
 
             text = "IMU: angular velocity (%2f, %2f, %2f)"\
