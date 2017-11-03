@@ -51,6 +51,10 @@ Originally recorded onboard via [ROS](http://www.ros.org) as the following topic
 /yoctopuce/imu
 ```
 
+---
+
+### Related Research
+
 The settings and approaches used in the above examples where informed and inspired by the following research work:
 
 - [Generalized Dynamic Object Removal for Dense Stereo Vision Based Scene Mapping using Synthesised Optical Flow](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton16removal.pdf) (O.K. Hamilton, T.P. Breckon), In Proc. International Conference on Image Processing, IEEE, pp. 3439-3443, 2016. [[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton16removal.pdf)] [[doi](http://dx.doi.org/10.1109/ICIP.2016.7532998)]
