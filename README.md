@@ -53,7 +53,7 @@ Originally recorded onboard via [ROS](http://www.ros.org) as the following topic
 
 ---
 
-### Related Research
+### References
 
 The settings and approaches used in the above examples where informed and inspired by the following research work:
 
