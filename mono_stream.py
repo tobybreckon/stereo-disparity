@@ -122,14 +122,14 @@ for index, filename in enumerate(sorted(os.listdir(full_path_directory))):
 
         # for now diplay GPS/IMU data on image if we have it
 
-        if (len(gps_data) > index):
+        if (len(gps_data) >= index):
             text = "GPS: lat.=%2f long.=%2f alt.=%2f"\
                 %(float(gps_data[index]['latitude']),
                 float(gps_data[index]['longitude']),
                 float(gps_data[index]['altitude']));
             cv2.putText(img, text, (20,40), cv2.FONT_HERSHEY_PLAIN, 1, (0,0,255), 1, 12)
 
-        if (len(imu_data) > index):
+        if (len(imu_data) >= index):
 
             roll, pitch, heading = gyro.gyro_to_angles(
                         float(imu_data[index]['orientation_x']),
