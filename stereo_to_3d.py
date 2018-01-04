@@ -50,9 +50,10 @@ def project_disparity_to_3d(disparity, max_disparity, rgb=[]):
     height, width = disparity.shape[:2];
 
     # assume a minimal disparity of 2 pixels is possible to get Zmax
-    # and then get reasonable scaling in X and Y output
+    # and then we get reasonable scaling in X and Y output if we change
+    # Z to Zmax in the lines X = ....; Y = ...; below
 
-    Zmax = ((f * B) / 2);
+    # Zmax = ((f * B) / 2);
 
     for y in range(height): # 0 - height is the y axis index
         for x in range(width): # 0 - width is the x axis index
@@ -67,8 +68,8 @@ def project_disparity_to_3d(disparity, max_disparity, rgb=[]):
 
                 Z = (f * B) / disparity[y,x];
 
-                X = ((x - image_centre_w) * Zmax) / f;
-                Y = ((y - image_centre_h) * Zmax) / f;
+                X = ((x - image_centre_w) * Z) / f;
+                Y = ((y - image_centre_h) * Z) / f;
 
                 # add to points
 
