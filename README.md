@@ -30,7 +30,7 @@ cd stereo-disparity
 
 < edit example with your favourite editor to set path to your rectified stereo data
 
-python3 ./<insert file name of one of the examples.py
+python3 ./<insert file name of one of the examples.py>
 ```
 ---
 
