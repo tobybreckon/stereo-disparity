@@ -27,6 +27,7 @@ while cross_product_check[0] == 0 and cross_product_check[1] == 0 and cross_prod
     cross_product_check = np.cross(P1-P2, P2-P3);
 
 # how to - calculate plane coefficients from these points
+# N.B. this may fail on occasion if matrix is singular - put inside a try/catch to avoid this instance when it occurs
 
 coefficients_abc = np.dot(np.linalg.inv(np.array([P1,P2,P3])), np.ones([3,1]))
 coefficient_d = math.sqrt(coefficients_abc[0]*coefficients_abc[0]+coefficients_abc[1]*coefficients_abc[1]+coefficients_abc[2]*coefficients_abc[2])
