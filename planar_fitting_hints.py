@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
 cross_product_check = np.array([0,0,0]);
 while cross_product_check[0] == 0 and cross_product_check[1] == 0 and cross_product_check[2] == 0:
-    [P1,P2,P3] = points[random.sample(xrange(len(points)), 3)];
+    [P1,P2,P3] = points[random.sample(range(len(points)), 3)];
     # make sure they are non-collinear
     cross_product_check = np.cross(P1-P2, P2-P3);
 
