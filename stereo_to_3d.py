@@ -90,14 +90,14 @@ def project_3D_points_to_2D_image_points(points):
 
     # calc. Zmax as per above
 
-    Zmax = (camera_focal_length_px * stereo_camera_baseline_m) / 2;
+    # Zmax = (camera_focal_length_px * stereo_camera_baseline_m) / 2;
 
     for i1 in range(len(points)):
 
         # reverse earlier projection for X and Y to get x and y again
 
-        x = ((points[i1][0] * camera_focal_length_px) / Zmax) + image_centre_w;
-        y = ((points[i1][1] * camera_focal_length_px) / Zmax) + image_centre_h;
+        x = ((points[i1][0] * camera_focal_length_px) / points[i1][2]) + image_centre_w;
+        y = ((points[i1][1] * camera_focal_length_px) / points[i1][2]) + image_centre_h;
         points2.append([x,y]);
 
     return points2;
