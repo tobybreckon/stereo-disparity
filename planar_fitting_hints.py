@@ -1,7 +1,9 @@
 #####################################################################
 
 # equation of a plane in python hints (incomplete)
-# aimed at 2017/18 L3 SSA students at DU
+
+# originally aimed at 2017/18 L3 SSA students at DU for the road surface task
+# not directly relevant to the 2018/19 assignment on object detection
 
 import numpy as np
 import sys
