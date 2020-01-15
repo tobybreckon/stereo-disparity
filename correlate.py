@@ -19,8 +19,8 @@ import os
 from itertools import tee
 
 directory_to_cycle = "/tmp/TTBB-durham-02-10-17-sub5" # edit this
-image_wait_delay_time = 2;
-display_images = True;
+image_wait_delay_time = 2
+display_images = True
 
 # for road traffic scene on a vehicle mounted camera 0.999 seems a good
 # value to catch action/changes when vehicle is stationary but still
@@ -47,8 +47,8 @@ files = sorted(os.listdir(directory_to_cycle))
 
 for filename_first, filename_next in pairwise(files):
 
-    # print('first ' + os.path.join(directory_to_cycle, filename_first));
-    # print('second ' + os.path.join(directory_to_cycle, filename_next));
+    # print('first ' + os.path.join(directory_to_cycle, filename_first))
+    # print('second ' + os.path.join(directory_to_cycle, filename_next))
 
     # if it is a PNG file
 
@@ -73,14 +73,14 @@ for filename_first, filename_next in pairwise(files):
         # based on example at:
         # https://github.com/tobybreckon/python-examples-ip/blob/master/correlation_template_matching.py
 
-        correlation = cv2.matchTemplate(img_first,img_next,cv2.TM_CCOEFF_NORMED);
-        min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(correlation);
+        correlation = cv2.matchTemplate(img_first,img_next,cv2.TM_CCOEFF_NORMED)
+        min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(correlation)
 
         if ((max_val) > CORRELATION_THRESHOLD):
 
             # print out second file name only such that we keep the first file
 
-             print('correlation = '+ str(max_val) + ':' + os.path.join(directory_to_cycle, filename_next));
+             print('correlation = '+ str(max_val) + ':' + os.path.join(directory_to_cycle, filename_next))
 
 # close all windows
 

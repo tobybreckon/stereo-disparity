@@ -14,7 +14,7 @@ import math
 
 if __name__ == "__main__":
     print("This file doesn't execute fully - see example code after this message")
-    exit();
+    exit()
 #####################################################################
 
 # points = np.array(....) ... of 3D points
@@ -22,11 +22,11 @@ if __name__ == "__main__":
 
 # how to - select 3 non-colinear points
 
-cross_product_check = np.array([0,0,0]);
+cross_product_check = np.array([0,0,0])
 while cross_product_check[0] == 0 and cross_product_check[1] == 0 and cross_product_check[2] == 0:
-    [P1,P2,P3] = points[random.sample(range(len(points)), 3)];
+    [P1,P2,P3] = points[random.sample(range(len(points)), 3)]
     # make sure they are non-collinear
-    cross_product_check = np.cross(P1-P2, P2-P3);
+    cross_product_check = np.cross(P1-P2, P2-P3)
 
 # how to - calculate plane coefficients from these points
 # N.B. this may fail on occasion if matrix is singular - put inside a try/catch to avoid this instance when it occurs

@@ -69,34 +69,34 @@ def gyro_to_angles(orientation_x, orientation_y, orientation_z, orientation_w):
 
     # ----
 
-    sqw = orientation_w * orientation_w;
-    sqx = orientation_x * orientation_x;
-    sqy = orientation_y * orientation_y;
-    sqz = orientation_z * orientation_z;
-    norm = sqx + sqy + sqz + sqw;
-    delta = orientation_y * orientation_w - orientation_x * orientation_z;
+    sqw = orientation_w * orientation_w
+    sqx = orientation_x * orientation_x
+    sqy = orientation_y * orientation_y
+    sqz = orientation_z * orientation_z
+    norm = sqx + sqy + sqz + sqw
+    delta = orientation_y * orientation_w - orientation_x * orientation_z
 
     if delta > 0.499 * norm:
             # // singularity at north pole
-            roll = 0; # added - T. Breckon (this is a fudge, not correct) **
-            pitch = 90.0;
-            heading  = round(2.0 * 1800.0/math.pi * math.atan2(orientation_x,-orientation_w)) / 10.0;
+            roll = 0 # added - T. Breckon (this is a fudge, not correct) **
+            pitch = 90.0
+            heading  = round(2.0 * 1800.0/math.pi * math.atan2(orientation_x,-orientation_w)) / 10.0
     else:
             if delta < -0.499 * norm:
                 # // singularity at south pole
-                roll = 0; # added - T. Breckon (this is a fudge, not correct) **
-                pitch = -90.0;
-                heading  = round(-2.0 * 1800.0/math.pi * math.atan2(orientation_x,-orientation_w)) / 10.0;
+                roll = 0 # added - T. Breckon (this is a fudge, not correct) **
+                pitch = -90.0
+                heading  = round(-2.0 * 1800.0/math.pi * math.atan2(orientation_x,-orientation_w)) / 10.0
             else:
-                roll  = round(1800.0/math.pi * math.atan2(2.0 * (orientation_w * orientation_x +orientation_y * orientation_z),sqw - sqx - sqy + sqz)) / 10.0;
-                pitch = round(1800.0/math.pi * math.asin(2.0 * delta / norm)) / 10.0;
-                heading  = round(1800.0/math.pi * math.atan2(2.0 * (orientation_x * orientation_y + orientation_z * orientation_w),sqw + sqx - sqy - sqz)) / 10.0;
+                roll  = round(1800.0/math.pi * math.atan2(2.0 * (orientation_w * orientation_x +orientation_y * orientation_z),sqw - sqx - sqy + sqz)) / 10.0
+                pitch = round(1800.0/math.pi * math.asin(2.0 * delta / norm)) / 10.0
+                heading  = round(1800.0/math.pi * math.atan2(2.0 * (orientation_x * orientation_y + orientation_z * orientation_w),sqw + sqx - sqy - sqz)) / 10.0
 
     # ----
 
     # ** - within the above code we will assume we are not operating at the North or South Pole
     # and if we are then the roll angle value here will be wrong and we'll have to just cope
 
-    return roll, pitch, heading;
+    return roll, pitch, heading
 
 #####################################################################
