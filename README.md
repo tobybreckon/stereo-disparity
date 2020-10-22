@@ -3,7 +3,7 @@
 a small selection of tools for calculating disparity and working with the rectified output from the CR MultiSense S21 stereo camera (and optional Yoctopuce GPS/IMU data if available)
 
 OpenCV Python computer vision examples used for teaching and research within the undergraduate Computer Science programme
-at [Durham University](http://www.durham.ac.uk) (UK) by [Prof. Toby Breckon](http://community.dur.ac.uk/toby.breckon/).
+at [Durham University](http://www.durham.ac.uk) (UK) by [Prof. Toby Breckon](https://breckon.org/toby/).
 
 All tested with [OpenCV](http://www.opencv.org) 3.x and Python 3.x.
 
@@ -57,13 +57,13 @@ Originally recorded onboard via [ROS](http://www.ros.org) as the following topic
 
 The settings and approaches used in the above examples where informed and inspired by the following research work:
 
-- [Generalized Dynamic Object Removal for Dense Stereo Vision Based Scene Mapping using Synthesised Optical Flow](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton16removal.pdf) (O.K. Hamilton, T.P. Breckon), In Proc. International Conference on Image Processing, IEEE, pp. 3439-3443, 2016. [[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton16removal.pdf)] [[doi](http://dx.doi.org/10.1109/ICIP.2016.7532998)]
+- [Generalized Dynamic Object Removal for Dense Stereo Vision Based Scene Mapping using Synthesised Optical Flow](https://breckon.org/toby/publications/papers/hamilton16removal.pdf) (O.K. Hamilton, T.P. Breckon), In Proc. International Conference on Image Processing, IEEE, pp. 3439-3443, 2016. [[pdf](https://breckon.org/toby/publications/papers/hamilton16removal.pdf)] [[doi](http://dx.doi.org/10.1109/ICIP.2016.7532998)]
 
-- [Quantitative Evaluation of Stereo Visual Odometry for Autonomous Vessel Localisation in Inland Waterway Sensing Applications](http://community.dur.ac.uk/toby.breckon/publications/papers/kriechbaumer15vessel.pdf) (T. Kriechbaumer, K. Blackburn, T.P. Breckon, O. Hamilton, M. Riva-Casado), In Sensors, MDPI, Volume 15, No. 12, pp. 31869-31887, 2015. [[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/kriechbaumer15vessel.pdf)] [[doi](http://dx.doi.org/10.3390/s151229892)]
+- [Quantitative Evaluation of Stereo Visual Odometry for Autonomous Vessel Localisation in Inland Waterway Sensing Applications](https://breckon.org/toby/publications/papers/kriechbaumer15vessel.pdf) (T. Kriechbaumer, K. Blackburn, T.P. Breckon, O. Hamilton, M. Riva-Casado), In Sensors, MDPI, Volume 15, No. 12, pp. 31869-31887, 2015. [[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/kriechbaumer15vessel.pdf)] [[doi](http://dx.doi.org/10.3390/s151229892)]
 
-- [A Foreground Object based Quantitative Assessment of Dense Stereo Approaches for use in Automotive Environments](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton13stereo.pdf) (O.K. Hamilton, T.P. Breckon, X. Bai, S. Kamata), In Proc. International Conference on Image Processing, IEEE, pp. 418-422, 2013.[[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/hamilton13stereo.pdf)] [[doi](http://dx.doi.org/10.1109/ICIP.2013.6738086)]
+- [A Foreground Object based Quantitative Assessment of Dense Stereo Approaches for use in Automotive Environments](https://breckon.org/toby/publications/papers/hamilton13stereo.pdf) (O.K. Hamilton, T.P. Breckon, X. Bai, S. Kamata), In Proc. International Conference on Image Processing, IEEE, pp. 418-422, 2013.[[pdf](https://breckon.org/toby/publications/papers/hamilton13stereo.pdf)] [[doi](http://dx.doi.org/10.1109/ICIP.2013.6738086)]
 
-- [An Empirical Comparison of Real-time Dense Stereo Approaches for use in the Automotive Environment](http://community.dur.ac.uk/toby.breckon/publications/papers/mroz12stereo.pdf) (F. Mroz, T.P. Breckon), In EURASIP Journal on Image and Video Processing, Springe, Volume 2012, No. 13, pp. 1-19, 2012. [[demo](http://community.dur.ac.uk/toby.breckon/demos/autostereo/)] [[pdf](http://community.dur.ac.uk/toby.breckon/publications/papers/mroz12stereo.pdf)] [[doi](http://dx.doi.org/10.1186/1687-5281-2012-13)]
+- [An Empirical Comparison of Real-time Dense Stereo Approaches for use in the Automotive Environment](https://breckon.org/toby/publications/papers/mroz12stereo.pdf) (F. Mroz, T.P. Breckon), In EURASIP Journal on Image and Video Processing, Springe, Volume 2012, No. 13, pp. 1-19, 2012. [[pdf](https://breckon.org/toby/publications/papers/mroz12stereo.pdf)] [[doi](http://dx.doi.org/10.1186/1687-5281-2012-13)]
 
 ---
 
